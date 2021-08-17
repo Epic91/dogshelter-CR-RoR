@@ -1,2 +1,25 @@
-<h1>Dogs#new</h1>
-<p>Find me in app/views/dogs/new.html.erb</p>
+<h1>Add a furry friend to the family!</h1>
+
+<%= form_path  dogs_path do%>
+
+    <label>Name:</label><br>
+    <% text_field_path :'dog[name]' %><br><br>
+
+    <label>Breed:</label><br>
+    <% text_field_path :'dog[breed]' %><br><br>
+
+    <label>Gender:</label><br>
+    <% text_field_path :'dog[gender]' %><br><br>
+
+    <label>Age:</label><br>
+    <% integer_field_path :'dog[age]' %><br><br>
+
+    <label>Description:</label><br>
+    <% text_area_path :'dog[description]' %><br><br>
+
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+    <%= submit_tag "Submit" %>
+
+<% end %>
+
