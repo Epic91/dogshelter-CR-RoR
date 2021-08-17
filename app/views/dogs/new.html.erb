@@ -1,21 +1,21 @@
 <h1>Add a furry friend to the family!</h1>
 
-<%= form_path  dogs_path do%>
+<%= form_tag  dogs_path do%>
 
     <label>Name:</label><br>
-    <% text_field_path :'dog[name]' %><br><br>
+    <%= text_field_tag :'dog[name]' %><br><br>
 
     <label>Breed:</label><br>
-    <% text_field_path :'dog[breed]' %><br><br>
+    <%= text_field_tag :'dog[breed]' %><br><br>
 
     <label>Gender:</label><br>
-    <% text_field_path :'dog[gender]' %><br><br>
+    <%= text_field_tag :'dog[gender]' %><br><br>
 
     <label>Age:</label><br>
-    <% integer_field_path :'dog[age]' %><br><br>
+    <%= number_field_tag :'dog[age]' %><br><br>
 
     <label>Description:</label><br>
-    <% text_area_path :'dog[description]' %><br><br>
+    <%= text_area_tag :'dog[description]' %><br><br>
 
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
