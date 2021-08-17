@@ -1,7 +1,12 @@
-<h1>Dogs in our Shelter:</h1>
+<h1>Dogs waiting to be welcomed home!</h1>
 
+<th><strong>Name:</strong></th>
+<th><strong>Breed:</strong></th>
 <% @dogs.each do |dog| %>
     <div>
-        <%= link_to dog.name,  dog_path(dog)%> | <%= dog.breed %>
+        <%= link_to dog.name,  dog_path(dog)%>
+        <%= dog.breed %>
     </div>
-<% end %>
+<% end %><br><br>
+
+<%= link_to 'Add a new friend', new_dog_path %>
