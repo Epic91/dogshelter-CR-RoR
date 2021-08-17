@@ -1,24 +1,9 @@
-# README
+# DogShelter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails project, focusing on the index, show, new and create methods.
 
-Things you may want to cover:
+* You are able to submit a new dog into the shelter db. On submit you are redirected to you dogs show page displaying its name, breed, age, gender and description.
 
-* Ruby version
+* You are able to view all of the submitted dogs, each dog name is linked to its show page.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* The show page has all of the dogs details.
